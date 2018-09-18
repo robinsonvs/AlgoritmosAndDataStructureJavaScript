@@ -11,10 +11,10 @@ function PriorityQueue() {
             collection.push(element);
         } else {
             var added = false;
-            for (var i = 0; collection.length; i++) {
+            for (var i = 0; i < collection.length; i++) {
                 if (element[1] < collection[i][1]) {
                     collection.splice(i, 0, element);
-                    added = tue;
+                    added = true;
                     break;
                 }
             }
@@ -46,4 +46,7 @@ var pq = new PriorityQueue();
 pq.enqueue(['Robinson Severo', 2]);
 pq.enqueue(['Joao Silva', 3]);
 pq.enqueue(['Pedro Silva', 1]);
+pq.printCollection();
+pq.dequeue();
+pq.front();
 pq.printCollection();
