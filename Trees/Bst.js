@@ -141,6 +141,9 @@ bst.remove(4);
 
 console.log(bst.findMin());
 console.log(bst.findMax());
+
+bst.remove(7);
+
 console.log(bst.findMax());
 console.log(bst.isPresent(4));
 
